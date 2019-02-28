@@ -8,6 +8,7 @@ public class MyStack {
 	}
 	
 	public void push(String item) {
+		System.out.println(item);
 	}
 
 	public String pop() {
@@ -15,7 +16,7 @@ public class MyStack {
 	}
 
 	public boolean isEmpty() {
-		return false;
+		return true;
 	}
 	
 	public int size() {

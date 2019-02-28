@@ -39,6 +39,31 @@ public class Main {
 	}
 	
 	public static boolean checkAnswer(int answer) {
-		return true;
+		
+		if(answer>min && answer<max ) {
+			if(answer==10) {
+				min = answer;
+			}else {
+				max = answer;				
+			}
+			
+			count++;
+			if(count>4) {
+				return true;
+			}			
+			return false;
+		
+
+		}else {
+			if(answer>min) {
+				System.out.println("답은 "+ answer+"보다 작습니다.");
+			}else {
+				System.out.println("답은 "+ answer+"보다 큽니다.");
+
+			}
+			return false;
+			
+		}
+		
 	}
 }
